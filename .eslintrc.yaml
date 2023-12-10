@@ -1,0 +1,11 @@
+extends:
+  - "@joshuaavalon/eslint-config-typescript"
+  - "plugin:jest/recommended"
+env:
+  es6: true
+overrides:
+  - files:
+      - jest.config.js
+      - "**/__tests__/*.ts"
+    env:
+      node: true
